@@ -1,11 +1,11 @@
-Name:           gmtk           
-Version:        1.0.5b1
-Release:        3%{?dist}
+Name:           gmtk
+Version:        1.0.5.0
+Release:        1%{?dist}
 Summary:        Library of common functions and widgets for gnome-mplayer and gecko-mediaplayer 
 
 License:        GPLv2+
 URL:            http://code.google.com/p/%{name}/ 
-Source0:        http://%{name}.googlecode.com/files/%{name}-%{version}.tar.gz
+Source0:        http://%{name}.googlecode.com/files/%{name}-1.0.5.tar.gz
 
 BuildRequires:  alsa-lib-devel
 BuildRequires:  gettext
@@ -27,7 +27,7 @@ developing applications that use %{name}.
 
 
 %prep
-%setup -q
+%setup -q -n %{name}-1.0.5
 
 
 %build
@@ -61,6 +61,9 @@ rm -rf $RPM_BUILD_ROOT%{_docdir}/%{name}
 
 
 %changelog
+* Thu Dec 29 2011 Julian Sikorski <belegdol@fedoraproject.org> - 1.0.5.0-1
+- Updated to 1.0.5 (as 1.0.5.0 to be newer than 1.0.5b2)
+
 * Tue Nov 15 2011 Julian Sikorski <belegdol@fedoraproject.org> - 1.0.5b1-3
 - Removed GConf logic since F-14 is going EOL soon
 - Added %%{?_isa} to explicit Requires
