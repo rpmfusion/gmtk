@@ -1,5 +1,5 @@
 Name:           gmtk
-Version:        1.0.6
+Version:        1.0.7
 Release:        1%{?dist}
 Summary:        Library of common functions and widgets for gnome-mplayer and gecko-mediaplayer 
 
@@ -61,6 +61,9 @@ rm -rf $RPM_BUILD_ROOT%{_docdir}/%{name}
 
 
 %changelog
+* Tue Oct 30 2012 Julian Sikorski <belegdol@fedoraproject.org> - 1.0.7-1
+- Updated to 1.0.7
+
 * Fri Apr 06 2012 Julian Sikorski <belegdol@fedoraproject.org> - 1.0.6-1
 - Updated to 1.0.6
 
