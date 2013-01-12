@@ -1,6 +1,6 @@
 Name:           gmtk
 Version:        1.0.7
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Library of common functions and widgets for gnome-mplayer and gecko-mediaplayer 
 
 License:        GPLv2+
@@ -12,7 +12,7 @@ BuildRequires:  gettext
 BuildRequires:  gtk3-devel
 BuildRequires:  intltool
 BuildRequires:  pulseaudio-libs-devel
-Requires:       mplayer%{?_isa}
+Requires:       mplayer
 
 %description
 Library of common functions and widgets for gnome-mplayer and gecko-mediaplayer
@@ -61,6 +61,9 @@ rm -rf $RPM_BUILD_ROOT%{_docdir}/%{name}
 
 
 %changelog
+* Sat Jan 12 2013 Nicolas Chauvet <kwizart@gmail.com> - 1.0.7-2
+- Avoid an %%{_isa} dependency on mplayer
+
 * Tue Oct 30 2012 Julian Sikorski <belegdol@fedoraproject.org> - 1.0.7-1
 - Updated to 1.0.7
 
