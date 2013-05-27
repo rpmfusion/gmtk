@@ -1,6 +1,6 @@
 Name:           gmtk
 Version:        1.0.8
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Library of common functions and widgets for gnome-mplayer and gecko-mediaplayer 
 
 License:        GPLv2+
@@ -61,6 +61,9 @@ rm -rf $RPM_BUILD_ROOT%{_docdir}/%{name}
 
 
 %changelog
+* Mon May 27 2013 Nicolas Chauvet <kwizart@gmail.com> - 1.0.8-2
+- Rebuilt for x264/FFmpeg
+
 * Sun Mar 03 2013 Julian Sikorski <belegdol@fedoraproject.org> - 1.0.8-1
 - Updated to 1.0.8
 
